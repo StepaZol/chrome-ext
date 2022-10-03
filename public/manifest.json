@@ -1,0 +1,15 @@
+{
+  "name": "Medium Extension",
+  "description": "This extension is made for demonstration purposes",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Default Title"
+  },
+  "permissions": ["activeTab", "tabs", "scripting", "webRequest"],
+  "host_permissions": ["https://www.gosuslugi.ru/"],
+  "optional_host_permissions": ["https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
